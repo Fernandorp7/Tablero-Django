@@ -1,8 +1,8 @@
 from django.urls import path
-from . import views
-from django.contrib import admin
+
+from buscaminas import views
 
 urlpatterns = [
-    path('', views.indexed, name='index'),
-    
+    path('', views.welcome, name='welcome'),
+    path('crea_tablero/', views.crea_tablero, name='crea_tablero'),
 ]
